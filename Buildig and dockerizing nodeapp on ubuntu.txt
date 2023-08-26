@@ -1,0 +1,50 @@
+sudo apt update -y
+    2  sudo apt install git -y
+    3  git clone https://github.com/Tangala123/boilerplate-nodejs.git
+    4  ls
+    5  cd boilerplate-nodejs/
+    6  ls
+    7  cd Desktop/
+    8  ls
+    9  cd node-bp/
+   10  ls
+   11  rm -rf package-lock.json 
+   12  curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+   13  sudo apt install nodejs
+   14  node -v
+   15  npm -v
+   16  ls
+   17  npm install
+   18  ls
+   19  npm run dev
+   20  ls
+   21  cat Dockerfile 
+   22  sudo vi Dockerfile 
+   23  vi Dockerfile 
+   24  sudo vi Dockerfile 
+   25  sudo apt install docker -y
+   26  sudo systemctl enable docker 
+   27  sudo systemctl start docker 
+   28  sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+   29  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+   30  echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   31  sudo apt update
+   32  sudo apt install -y docker-ce
+   33  sudo systemctl start docker
+   34  sudo systemctl enable docker
+   35  docker info
+   36  sudo usermod -aG docker ubuntu
+   37  exit
+   38  logout
+   39  cd boilerplate-nodejs/Desktop/node-bp/
+   40  ls
+   41  docker build -t shankar .
+   42  docker images
+   43  docker run -d 776c83152a68
+   44  docker ps
+   45  sudo wget https://github.com/aquasecurity/trivy/releases/download/v0.18.3/trivy_0.18.3_Linux-64bit.deb
+   46  sudo dpkg -i trivy_0.18.3_Linux-64bit.deb
+   47  trivy -v
+   48  docker images
+   49  trivy image shankar
+   50  history
